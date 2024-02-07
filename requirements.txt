@@ -1,0 +1,8 @@
+matplotlib==3.5.3
+numpy==1.23.2
+torch==2.1.0+cu118
+torchaudio==2.1.0+cu118
+torchsummary==1.5.1
+torchvision==0.16.0+cu118
+tqdm==4.64.0
+wavio==0.0.8
