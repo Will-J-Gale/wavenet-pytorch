@@ -1,6 +1,6 @@
 *.model
 *.wav
-!audio/train/*
+!audio/train/**/*
 !audio/model_output/*
 !audio/model_output/experiments/*
 !audio/validation_DI.wav
