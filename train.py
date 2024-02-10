@@ -94,7 +94,6 @@ def main(args):
     model.eval()
     prediction = model(test_x_slice.to(args.device)).cpu().detach().numpy().squeeze()
 
-    print(prediction)
     plt.figure("Validation")
     plt.plot(test_y_slice)
     plt.plot(prediction)
