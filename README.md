@@ -23,6 +23,8 @@ Output
 * [Wavenet mid gain](audio/model_output/wavenet_mid_gain.wav)
 * [Convnet high gain](audio/model_output/convnet_high_gain.wav)
 
+More audio from experiments can be found here https://github.com/Will-J-Gale/wavenet-pytorch/tree/master/audio/model_output/experiments
+
 ## Test
 ```
 python test.py
