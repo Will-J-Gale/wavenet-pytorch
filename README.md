@@ -19,8 +19,9 @@ Input
 * [Validation audio](audio/validation_DI.wav)
 
 Output
-* [Wavenet output](audio/model_output/wavenet.wav)
-* [Convnet output](audio/model_output/convnet.wav)
+* [Wavenet high gain](audio/model_output/wavenet.wav)
+* [Wavenet mid gain](audio/model_output/wavenet_mid_gain.wav)
+* [Convnet high gain](audio/model_output/convnet.wav)
 
 ## Test
 ```
