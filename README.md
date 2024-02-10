@@ -19,9 +19,9 @@ Input
 * [Validation audio](audio/validation_DI.wav)
 
 Output
-* [Wavenet high gain](audio/model_output/wavenet.wav)
+* [Wavenet high gain](audio/model_output/wavenet_high_gain.wav)
 * [Wavenet mid gain](audio/model_output/wavenet_mid_gain.wav)
-* [Convnet high gain](audio/model_output/convnet.wav)
+* [Convnet high gain](audio/model_output/convnet_high_gain.wav)
 
 ## Test
 ```
@@ -33,4 +33,12 @@ python train.py
 ```
 ![Training waveform](images/training_waveform.png)
 _Wavenet result from 100 epochs of training_
+
+## Wavenet builder
+In the models folder there is a wavenet builder class to build different variations of wavenet.  
+
+The parameters that can be tweaked are:
+* Number of residual blocks
+* Number of 'wavenet layers'
+* Number of start convolution channels (subsequent layers are simply half the previous layer's channels)
 
