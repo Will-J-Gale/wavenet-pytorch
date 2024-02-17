@@ -33,9 +33,9 @@ def main(args):
     sample_rate = get_sample_rate(args.input_audio)
     overlap = 1000
     num_input_samples = 12000
-    model = get_model(args.model).cuda() 
+    model = get_model(args.model).to(args.device) 
     model.load_state_dict(torch.load(args.model_weights))
-    source = wav_to_tensor(args.input_audio).cuda()
+    source = wav_to_tensor(args.input_audio).to(args.device)
     num_batches = math.ceil((len(source) / (num_input_samples + overlap)))
     wav_output = np.ndarray((1,))
     outputs = []
