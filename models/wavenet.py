@@ -80,7 +80,7 @@ class WaveNet(nn.Module):
     def forward(self, x, pad_start=True):
         if pad_start:
             x = torch.cat(
-                (torch.zeros((len(x), self.receptive_field)).to(x.device), x), dim=1
+                (torch.zeros((x.shape[0], self.receptive_field)).to(x.device), x), dim=1
             )
         
         if(x.ndim == 2):
